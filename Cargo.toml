@@ -1,0 +1,15 @@
+[package]
+name = "gen-rsa-exp-pgp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pgp = { version = "0.13", git = "https://github.com/rpgp/rpgp" }
+rand = "0.8.5"
+rsa = "0.9.6"
+testresult = "0.4.1"
+
+[dependencies.num-bigint]
+version = "0.8.1"
+features = ["rand", "i128", "u64_digit", "prime", "zeroize"]
+package = "num-bigint-dig"
